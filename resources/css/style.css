@@ -28,10 +28,6 @@ html {
     margin: 0 auto;
 }
 
-section {
-    padding-bottom: 80px;
-}
-
 .box {
     padding: 1%;
     margin-top: 40px;
@@ -108,12 +104,44 @@ header {
     padding-top: 80px;
 }
 
+.section-features h2 {
+    padding-top: 0px;
+}
+
 /*---Icons---*/
 .icon-big {
     font-size: 250%;
     color: #e67e22;
 }
 
+.icon-small {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #e67e22;
+    font-size: 120%;
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -4px;
+    margin-right: 10px;
+}
+
+/*---Links---*/
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #e67e22;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #e67e22;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:active,
+a:hover {
+    color: #555;
+    border-bottom: 1px solid transparent; 
+}
 /*---Buttons---*/
 .btn:link,
 .btn:visited {
@@ -152,6 +180,11 @@ header {
     border-color: #bf6516;
     background-color: #bf6516;
     color: aliceblue;
+}
+
+.btn-app:link,
+.btn-app:visited {
+    border: 0;
 }
 
 /*---NAV---*/
@@ -193,6 +226,7 @@ header {
 
 .section-meals {
     padding-top: 70px;
+    padding-bottom: 60px;
 }
 
 .meals-showcase {
@@ -227,6 +261,11 @@ header {
 }
 
 /*---How It Works---*/
+.section-steps {
+    background-color: #f4f4f4;
+    padding-bottom: 80px;
+}
+
 .steps-box {
     margin-top: 30px;
 }
@@ -271,4 +310,61 @@ header {
     height: 50px;
     width: auto;
     margin-right: 10px;
+}
+
+/*---Cities Section---*/
+
+.section-cities {
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+.city-img {
+    height: auto;
+    width: 100%;
+}
+
+.city-feature {
+    margin-bottom: 10px;
+}
+
+/*---Testimonials---*/
+.section-testimonials {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(img/back-customers.jpg);
+    background-size: cover;
+    color: aliceblue;
+    background-attachment: fixed;
+}
+
+blockquote {
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    letter-spacing: normal;
+    position: relative;
+    margin-top: 40px;
+}
+
+blockquote:before {
+    content: "\201C";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: -5%;
+    left: -5%;
+}
+
+cite {
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+}
+
+cite img {
+    border-radius: 50%;
+    height: 45px;
+    margin-right: 10px;
+    vertical-align: middle;
 }
